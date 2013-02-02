@@ -1,0 +1,16 @@
+{
+  "name": "xjson",
+  "version": "0.0.1",
+  "description": "lisp-styled JSON",
+  "keywords": ["programming language", "lisp", "json"],
+  "author": "Rob Britton <rob@robbritton.com>",
+  "repository": { "type": "git", "url" : "https://github.com/robbrit/xjson" },
+  "engines": { "node" : ">= 0.8.11" },
+  "dependencies" : {
+    "mocha": ">= 1.6.0",
+    "coffee-script": "*"
+  },
+  "scripts": {
+    "test": "mocha --compilers coffee:coffee-script"
+  }
+}
