@@ -34,3 +34,8 @@ Installation
 ============
 
     npm install xjson
+
+Licensing
+========
+
+MIT License
