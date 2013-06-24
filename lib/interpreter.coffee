@@ -139,6 +139,13 @@ xjson = (arr, env) ->
 # Exports the xjson interpreter
 exports.xjson = xjson
 
+# Export a toLisp function which converts an xjson sexp to a LispyScript sexp
+exports.toLisp = (sexp) ->
+  if isArray sexp
+    "(" + sexp.map(exports.toLisp).join(" ") + ")"
+  else
+    sexp
+
 # Load the standard lib
 lib = require("./lib").lib
 

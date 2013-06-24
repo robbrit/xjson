@@ -30,6 +30,17 @@ exports.lib = [
   ['defun', 'or', [], (args) -> args[0] || args[1]],
   ['defun', 'and', [], (args) -> args[0] && args[1]],
 
+  # Some math functions
+  ['defun', 'sqrt', [], (args) -> Math.sqrt args[0]],
+  ['defun', 'sin', [], (args) -> Math.sin args[0]],
+  ['defun', 'cos', [], (args) -> Math.cos args[0]],
+  ['defun', 'tan', [], (args) -> Math.tan args[0]],
+  ['defun', 'asin', [], (args) -> Math.asin args[0]],
+  ['defun', 'acos', [], (args) -> Math.acos args[0]],
+  ['defun', 'atan', [], (args) -> Math.atan args[0]],
+  ['defun', 'log', [], (args) -> Math.log args[0]],
+  ['defun', 'exp', [], (args) -> Math.exp args[0]],
+
   # List functions
   ['defun', 'cons', [], (args) -> [ args[0] ].concat(args[1]) ]
   ['defun', 'car', [], (args) ->

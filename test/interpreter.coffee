@@ -1,5 +1,6 @@
 assert = require "assert"
 xjson = require("../lib/interpreter").xjson
+toLisp = require("../lib/interpreter").toLisp
 
 describe "arithmetic functions", ->
   it "should add properly", ->
@@ -54,6 +55,10 @@ describe "list functions", ->
     assert !xjson ["null?", ["list", 1]]
     assert !xjson ["null?", 1]
     assert !xjson ["null?", ["list", ["list"]]]
+
+describe "toLisp", ->
+  it "should convert a simple sexp properly", ->
+    assert.equal "(+ 2 3)", toLisp ["+", 2, 3]
 
 ###
   ["display", [["lambda", ["x"], ["*", "x", 2]], 3]],

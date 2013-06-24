@@ -1,6 +1,6 @@
 {
   "name": "xjson",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "lisp-styled JSON",
   "keywords": ["programming language", "lisp", "json"],
   "author": "Rob Britton <rob@robbritton.com>",
